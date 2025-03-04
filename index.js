@@ -10,7 +10,7 @@ app.get ('/', (req, res) => {
     res.json ("server");
 });
 
-app.post('/signup', (req, res) => {
+app.post('/', (req, res) => {
     const {username, email, password, dateOfBirth} = req.body;
 
     if ( !username ) {
