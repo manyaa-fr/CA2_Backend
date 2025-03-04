@@ -7,7 +7,7 @@ const port = 3000;
 app.use(express.json());
 
 app.get ('/', (req, res) => {
-    console.log ("server");
+    res.json ("server");
 });
 
 app.post('/signup', (req, res) => {
